@@ -1,0 +1,7 @@
+{{<layout}}
+{{$content}}
+    <img src="{{cover}}">
+    <div>{{title}}</div>
+    <a class="include" href="{{availabilityUrl}}">
+{{/content}}
+{{/layout}}

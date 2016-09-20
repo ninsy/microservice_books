@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+         <a class="include" href="https://kwasniew.github.io/menu.html">
+        {{$content}}
+        {{/content}}
+        <a class="include" href="https://kwasniew.github.io/footer.html">
+    </body>
+        <script src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+    <script>
+        $("a.include").each(function(i,elem) {
+            var link = $(elem).attr('href');
+            $.get(link, function(res) {
+                $(elem).replaceWith(res);
+            });
+
+        });
+    </script>
+</html>
+
+header:
+footer:
+
